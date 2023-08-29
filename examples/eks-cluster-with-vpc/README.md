@@ -9,3 +9,9 @@ This example deploys the following Basic EKS Cluster with VPC
 - Creates EKS Cluster Control plane with one managed node group
 
 You can view the full documentation for this example [here](https://aws-observability.github.io/terraform-aws-observability-accelerator/helpers/new-eks-cluster/)
+
+```bash
+export TF_VAR_aws_region="us-east-1"
+export TF_VAR_cluster_name="eks-observability-1"
+
+```

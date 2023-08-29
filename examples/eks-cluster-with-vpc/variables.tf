@@ -1,7 +1,7 @@
 variable "cluster_name" {
   description = "Name of cluster - used by Terratest for e2e test automation"
   type        = string
-  default     = "eks-cluster-with-vpc"
+  default     = "eks-observability-1"
 
   validation {
     # cluster name is used as prefix on eks_blueprint module and cannot be >25 characters
@@ -12,6 +12,7 @@ variable "cluster_name" {
 variable "aws_region" {
   description = "AWS Region"
   type        = string
+  default     = "us-east-1"
 }
 variable "managed_node_instance_type" {
   description = "Instance type for the cluster managed node groups"
@@ -21,10 +22,10 @@ variable "managed_node_instance_type" {
 variable "managed_node_min_size" {
   description = "Minumum number of instances in the node group"
   type        = number
-  default     = 2
+  default     = 3
 }
 variable "eks_version" {
   type        = string
   description = "EKS Cluster version"
-  default     = "1.25"
+  default     = "1.27"
 }

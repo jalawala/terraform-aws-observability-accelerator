@@ -46,3 +46,13 @@ No resources.
 | <a name="output_grafana_workspace_iam_role_arn"></a> [grafana\_workspace\_iam\_role\_arn](#output\_grafana\_workspace\_iam\_role\_arn) | Amazon Managed Grafana Workspace's IAM Role ARN |
 | <a name="output_grafana_workspace_id"></a> [grafana\_workspace\_id](#output\_grafana\_workspace\_id) | Amazon Managed Grafana Workspace ID |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
+
+Apply complete! Resources: 5 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+grafana_workspace_endpoint = "https://g-a551d3881e.grafana-workspace.us-east-1.amazonaws.com"
+grafana_workspace_iam_role_arn = "arn:aws:iam::000474600478:role/grafana/aws-observability-accelerator-20230828104146932100000002"
+grafana_workspace_id = "g-a551d3881e"
+
